@@ -14,7 +14,7 @@ public class MethodRefEx5 {
                 .toList();
         System.out.println("list = " + result1);
 
-        List<String> result1 = MyStreamV3.of(personList)
+        List<String> result2 = MyStreamV3.of(personList)
                 .map(Person::introduce)
                 .map(String::toUpperCase)
                 .toList();
